@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(https://cdn.pixabay.com/animation/2023/09/22/11/32/11-32-56-671_512.gif);
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 10px 10px 10px #ffffff;
+}
+
+.container{
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;/*só consigo movimentar top e left usando essa linha*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.imagem img{
+    height: 100%;
+    width: 100%;
+}
+
+input{
+    display: none;
+}
+
+.bar{
+    background-color: black;
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.bar:hover{
+    background-color: #ffe6c8;
+}
+
+.navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%);
+}
+
+.imagens{
+    display: flex;
+    height: 100%;
+    width: 800%;
+}
+
+.imagem{
+    width: 12.5%;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#imagem1:checked ~ .img1{
+    margin: 0;
+}
+
+#imagem2:checked ~ .img1{
+    margin-left: -12.5%;
+}
+
+#imagem3:checked ~ .img1{
+    margin-left: -25%;
+}
+
+#imagem4:checked ~ .img1{
+    margin-left: -37.5%;
+}
+
+#imagem5:checked ~ .img1{
+    margin-left: -50%;
+}
+
+#imagem6:checked ~ .img1{
+    margin-left: -62.5%;
+}
+
+#imagem7:checked ~ .img1{
+    margin-left: -75%;
+}
+
+#imagem8:checked ~ .img1{
+    margin-left: -87.5%;
+}
+
+footer{
+    position: absolute;
+    bottom: 5px;
+    padding-left: 40%;
+    color: #ffffff;
+}
+
+@media (max-width:768px){
+    footer{
+        padding-left: 50px;
+    }
+}
+
+
+
+
+
+
